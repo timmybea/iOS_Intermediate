@@ -1,0 +1,33 @@
+2.3 CREATING THE PROJECT
+
+Create single view application in Xcode
+
+We are using the facebook pop framework, so google those terms and go to the github repository. In the readme you will see the pod import statement.
+
+in terminal:
+pod init
+vim Podfile
+(paste in the import statement)
+
+important vim keys:
+i - insert
+esc - clears your previous command
+:x - save and exit
+
+open the xcworkspace
+
+CREATE A BRIDGING HEADER
+Because Pop is a framework in ObjC, we need to create a bridging header to work with it in swift.
+
+Simply create a new ObjectiveC file. It doesn't matter what it is, because we are only using it to get the prompt 'create a bridging header file'. We select it, and then delete the file that we just created. What is left behind is the bridging header file.
+
+Now we can use the ObjC import statement #import <pop/POP.h> in the bridging header. Now you can go to any of your swift files and use the import pop statement. If for some reason you can't import, check that the use_frameworks! line is uncommented in your podfile, clean (comm k) and build (comm b).
+
+Get free image from freepik.com
+
+2.4 CUSTOM CONTROLS AND IBDESIGNABLE
+
+
+
+
+
