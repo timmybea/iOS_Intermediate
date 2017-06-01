@@ -11,11 +11,24 @@ import pop
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var emailCenterX: NSLayoutConstraint!
+    @IBOutlet weak var passwordCenterX: NSLayoutConstraint!
+    @IBOutlet weak var loginCenterX: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+
     }
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 4) {
+            self.loginCenterX.constant = -100
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

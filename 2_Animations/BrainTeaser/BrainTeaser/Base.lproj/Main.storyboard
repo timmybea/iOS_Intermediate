@@ -77,7 +77,7 @@
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
-                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="1" green="0.99607843139999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="8"/>
@@ -98,6 +98,11 @@
                             <constraint firstItem="zD0-jQ-bN7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uyp-Pq-IHO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailCenterX" destination="XZA-zF-IhQ" id="1EV-Uw-5UK"/>
+                        <outlet property="loginCenterX" destination="0x1-GD-SXX" id="KNH-v1-Zbq"/>
+                        <outlet property="passwordCenterX" destination="0DP-EF-7Ic" id="mjS-vs-mEk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
