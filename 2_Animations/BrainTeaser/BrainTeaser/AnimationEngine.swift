@@ -55,6 +55,12 @@ class AnimationEngine {
                 moveAnim?.springSpeed = 12
                 moveAnim?.springBounciness = 12
                 
+                //create a differing amount of drag for each element to get more variance in the animation.
+                if index > 0 {
+                    moveAnim?.dynamicsFriction += 10 + CGFloat(index)
+                }
+                
+                
                 let con = self.constraints[index]
                 con.pop_add(moveAnim, forKey: "moveOnScreen")
             }

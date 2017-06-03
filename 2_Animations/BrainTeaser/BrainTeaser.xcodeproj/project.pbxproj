@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9A6E1260DE76FCAB60842E88 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDF784D8F7227767A442175 /* Pods_BrainTeaser.framework */; };
+		B00423ED1EE3238300843475 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00423EC1EE3238300843475 /* GameVC.swift */; };
+		B00423EF1EE33E9900843475 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00423EE1EE33E9900843475 /* Card.swift */; };
+		B00423F11EE33F4300843475 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00423F01EE33F4300843475 /* Card.xib */; };
 		B0156FAC1EDF69220028519C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0156FAB1EDF69220028519C /* CustomTextField.swift */; };
 		B0156FAE1EDF6E5B0028519C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0156FAD1EDF6E5B0028519C /* CustomButton.swift */; };
 		B0156FB11EDF8FAC0028519C /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0156FB01EDF8FAC0028519C /* AnimationEngine.swift */; };
@@ -36,6 +39,9 @@
 		407A1E40D0495646EA886BAB /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
 		76BAB0B71C674B84937C63A6 /* Pods-BrainTeaserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F19ACE6E7A09675C9558D68 /* Pods-BrainTeaserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.release.xcconfig"; sourceTree = "<group>"; };
+		B00423EC1EE3238300843475 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		B00423EE1EE33E9900843475 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B00423F01EE33F4300843475 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		B0156FA71EDF57170028519C /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0156FAB1EDF69220028519C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B0156FAD1EDF6E5B0028519C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B08F67111EDF5411009F2C13 /* LoginVC.swift */,
+				B00423EC1EE3238300843475 /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -88,6 +95,8 @@
 				B08F67131EDF5411009F2C13 /* Main.storyboard */,
 				B0156FAB1EDF69220028519C /* CustomTextField.swift */,
 				B0156FAD1EDF6E5B0028519C /* CustomButton.swift */,
+				B00423EE1EE33E9900843475 /* Card.swift */,
+				B00423F01EE33F4300843475 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 				B08F671A1EDF5411009F2C13 /* LaunchScreen.storyboard in Resources */,
 				B08F67171EDF5411009F2C13 /* Assets.xcassets in Resources */,
 				B08F67151EDF5411009F2C13 /* Main.storyboard in Resources */,
+				B00423F11EE33F4300843475 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +380,10 @@
 			files = (
 				B0156FAE1EDF6E5B0028519C /* CustomButton.swift in Sources */,
 				B08F67121EDF5411009F2C13 /* LoginVC.swift in Sources */,
+				B00423EF1EE33E9900843475 /* Card.swift in Sources */,
 				B08F67101EDF5411009F2C13 /* AppDelegate.swift in Sources */,
 				B0156FB11EDF8FAC0028519C /* AnimationEngine.swift in Sources */,
+				B00423ED1EE3238300843475 /* GameVC.swift in Sources */,
 				B0156FAC1EDF69220028519C /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
