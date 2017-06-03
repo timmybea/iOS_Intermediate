@@ -15,18 +15,19 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordCenterX: NSLayoutConstraint!
     @IBOutlet weak var loginCenterX: NSLayoutConstraint!
     
+    var animEngine: AnimationEngine!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        animEngine = AnimationEngine(constraints: [emailCenterX, passwordCenterX, loginCenterX])
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 4) {
-            self.loginCenterX.constant = -100
-            self.view.layoutIfNeeded()
-        }
+
+        
+        animEngine.animateOnScreen(delay: 2.0)
     }
     
     override func didReceiveMemoryWarning() {

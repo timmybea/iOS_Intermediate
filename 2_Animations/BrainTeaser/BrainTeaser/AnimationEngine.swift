@@ -11,15 +11,55 @@ import pop
 
 class AnimationEngine {
     
+    private class var screenRect: CGRect {
+        return CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    }
+    
     class var offscreenRightPosition: CGPoint {
-        return CGPoint(x: UIScreen.main.bounds.width, y: UIScreen.main.bounds.height / 2)
+        return CGPoint(x: screenRect.width, y: screenRect.midY)
     }
     
     class var offscreenLeftPosition: CGPoint {
-        return CGPoint(x: 0.0, y: UIScreen.main.bounds.height / 2)
+        return CGPoint(x: -screenRect.width, y: screenRect.midY)
     }
     
-
+    class var centerScreen: CGPoint {
+        return CGPoint(x: screenRect.midX, y: screenRect.midY)
+    }
+    
+    var originalConstants = [CGFloat]()
+    var constraints: [NSLayoutConstraint]!
+    
+    let ANIM_DELAY: Double = 0.8
+    
+    init(constraints: [NSLayoutConstraint]) {
+        
+        for con in constraints {
+            originalConstants.append(con.constant)
+            con.constant = AnimationEngine.offscreenRightPosition.x
+        }
+        
+        self.constraints = constraints
+    }
+    
+    func animateOnScreen(delay: Double?) {
+        
+        let setDelay = delay == nil ? ANIM_DELAY : delay!
+        
+        let time = DispatchTime.now() + setDelay
+        
+        DispatchQueue.main.asyncAfter(deadline: time, execute: {
+            for index in 0..<self.constraints.count {
+                let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
+                moveAnim?.toValue = self.originalConstants[index]
+                moveAnim?.springSpeed = 12
+                moveAnim?.springBounciness = 12
+                
+                let con = self.constraints[index]
+                con.pop_add(moveAnim, forKey: "moveOnScreen")
+            }
+        })
+    }
     
 }
 
