@@ -141,6 +141,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="noPressedWithSender:" destination="fvP-hX-h8m" eventType="touchUpInside" id="Uua-rN-obd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-hm-PNd" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="219" y="597" width="120" height="40"/>
@@ -159,6 +162,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="yesPressedWithSender:" destination="fvP-hX-h8m" eventType="touchUpInside" id="XwO-0x-86c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-3h-s1f">
                                 <rect key="frame" x="87" y="68" width="200.5" height="24"/>
@@ -177,6 +183,11 @@
                             <constraint firstItem="mqP-zI-OYW" firstAttribute="top" secondItem="eTs-hm-PNd" secondAttribute="bottom" constant="30" id="sdc-NL-msX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noBtn" destination="TWo-tH-D8x" id="vJg-zf-hvG"/>
+                        <outlet property="titleLabel" destination="IXU-3h-s1f" id="cIu-db-1Qk"/>
+                        <outlet property="yesBtn" destination="eTs-hm-PNd" id="KXB-gX-bch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOp-L2-lVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
