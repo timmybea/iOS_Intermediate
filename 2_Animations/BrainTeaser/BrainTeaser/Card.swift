@@ -14,6 +14,7 @@ class Card: UIView {
     let shapes = ["shape1", "shape2", "shape3"]
     
     var currentShape: String!
+    var imageName: String = ""
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -28,9 +29,6 @@ class Card: UIView {
             setupView()
         }
     }
-
-    
-    
     
     override func awakeFromNib() {
         self.setupView()
@@ -60,7 +58,7 @@ class Card: UIView {
     func selectShape() {
         var currentShape = shapes[Int(arc4random_uniform(3))]
         imageView.image = UIImage(named: currentShape)
-        
+        self.imageName = currentShape
     }
 
     

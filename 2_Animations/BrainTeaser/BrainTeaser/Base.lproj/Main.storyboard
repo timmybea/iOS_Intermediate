@@ -172,6 +172,12 @@
                                 <color key="textColor" red="0.14509803921568629" green="0.54509803921568623" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-xT-42K">
+                                <rect key="frame" x="147" y="521" width="81" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="0.1450980392" green="0.5450980392" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -179,19 +185,22 @@
                             <constraint firstItem="IXU-3h-s1f" firstAttribute="top" secondItem="Rs4-Hh-pW7" secondAttribute="bottom" constant="48" id="6vV-Bq-yvJ"/>
                             <constraint firstItem="TWo-tH-D8x" firstAttribute="leading" secondItem="paE-b8-49b" secondAttribute="leadingMargin" constant="20" id="PWV-vj-0u4"/>
                             <constraint firstItem="mqP-zI-OYW" firstAttribute="top" secondItem="TWo-tH-D8x" secondAttribute="bottom" constant="30" id="Wc8-PU-t0z"/>
+                            <constraint firstItem="wtZ-xT-42K" firstAttribute="centerX" secondItem="paE-b8-49b" secondAttribute="centerX" id="YQR-tv-xYA"/>
+                            <constraint firstItem="eTs-hm-PNd" firstAttribute="top" secondItem="wtZ-xT-42K" secondAttribute="bottom" constant="40" id="bma-9O-EZj"/>
                             <constraint firstItem="IXU-3h-s1f" firstAttribute="centerX" secondItem="paE-b8-49b" secondAttribute="centerX" id="pyh-v8-fg9"/>
                             <constraint firstItem="mqP-zI-OYW" firstAttribute="top" secondItem="eTs-hm-PNd" secondAttribute="bottom" constant="30" id="sdc-NL-msX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="noBtn" destination="TWo-tH-D8x" id="vJg-zf-hvG"/>
+                        <outlet property="timeLabel" destination="wtZ-xT-42K" id="BR1-l0-ExY"/>
                         <outlet property="titleLabel" destination="IXU-3h-s1f" id="cIu-db-1Qk"/>
                         <outlet property="yesBtn" destination="eTs-hm-PNd" id="KXB-gX-bch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOp-L2-lVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="37"/>
+            <point key="canvasLocation" x="792.79999999999995" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>

@@ -2,4 +2,134 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainTeaser/GameVC.swift"
+            timestampString = "518647265.866956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "showNextCard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainTeaser/GameVC.swift"
+            timestampString = "518647265.866956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "showNextCard()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrainTeaser.GameVC.(showNextCard in _3E0212CBA41AC8B24534CCE122ADF72A) () -&gt; ()"
+                  moduleName = "BrainTeaser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timbeals/iOSDevelopment/iOS_Intermediate/2_Animations/BrainTeaser/BrainTeaser/GameVC.swift"
+                  timestampString = "518645017.396836"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrainTeaser.GameVC.(showNextCard in _3E0212CBA41AC8B24534CCE122ADF72A) () -&gt; ()"
+                  moduleName = "BrainTeaser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timbeals/iOSDevelopment/iOS_Intermediate/2_Animations/BrainTeaser/BrainTeaser/GameVC.swift"
+                  timestampString = "518645017.398228"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainTeaser/GameVC.swift"
+            timestampString = "518647265.866956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "showNextCard()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrainTeaser.GameVC.(showNextCard in _3E0212CBA41AC8B24534CCE122ADF72A) () -&gt; ()"
+                  moduleName = "BrainTeaser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timbeals/iOSDevelopment/iOS_Intermediate/2_Animations/BrainTeaser/BrainTeaser/GameVC.swift"
+                  timestampString = "518645017.401931"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1946">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrainTeaser.GameVC.((showNextCard in _3E0212CBA41AC8B24534CCE122ADF72A) () -&gt; ()).(closure #1)"
+                  moduleName = "BrainTeaser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/timbeals/iOSDevelopment/iOS_Intermediate/2_Animations/BrainTeaser/BrainTeaser/GameVC.swift"
+                  timestampString = "518645017.403402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrainTeaser/GameVC.swift"
+            timestampString = "518647265.866956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "yesPressed(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
